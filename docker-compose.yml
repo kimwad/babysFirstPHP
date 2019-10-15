@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  lamp:
+    image: mattrayner/lamp:latest
+    restart: always
+    ports:
+      - '5551:80'
+    volumes:
+      - ./php:/var/www/html
